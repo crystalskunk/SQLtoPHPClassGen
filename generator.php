@@ -549,7 +549,7 @@ class $class extends PDO
 		</b>
 		<p>
 			<font face=\"Arial\" size=\"2\"><b>
-					Class '$class' successfully generated as file '$filename'!
+					Calls '$classOri' successfully generated as file '$filename'!
 					<p>
 						<a href=\"javascript:history.back();\">
 							back
