@@ -1,7 +1,3 @@
-<?php
-	require_once("LoadClass.php");
-	$pdo = Database::getInstance();
-?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <form action="" method="POST" name="frmtest">
 	<select name="numclient" id="numclient">
@@ -28,7 +24,6 @@
     <input type="text" name="localite" id="localite">
     <br>
     <input type="button" class="switch-test" name="s1" value="call ajax">
-    <!--input type="hidden" name="token" value="f4f4f99191ca681c2abe4e9cf07843b5"-->
 </form>
 <div id="logjs" name="logjs"></div>
 <script type="text/javascript">

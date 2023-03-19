@@ -3,10 +3,10 @@
 class Database extends PDO { 
 	
 	private static $_instance;
-	private static $_dbn = '' ;
-	private static $_dsn = '';
-	private static $_dbuser = '' ;
-	private static $_dbpwd = '';
+	private static $_dbn = '' ; 	//DBNAME
+	private static $_dsn = ''; 		//mysql:host=HOST;dbname=DBNAME'
+	private static $_dbuser = '' ; 	//DBUSER
+	private static $_dbpwd = ''; 	//DBPASS
 	
 	var $host;  		
 	var $password; 	

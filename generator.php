@@ -200,7 +200,7 @@ fwrite($file, $page_classe);
 
 
 /*******************************************************************************************/
-/******************		DEBUT	FICHIER	CLASSMRG	****************************************/
+/******************		DEBUT	FICHIER	CLASSMGR	****************************************/
 /*******************************************************************************************/
 	$classOri = $class;
 	$class .= 'Manager';
@@ -401,14 +401,15 @@ class $class extends PDO
 
 <p><font size=\"1\" face=\"Arial\">this is a script from CrystalSkunk</font></p>";
 
+/*******************************************************************************************/
+/******************			FIN	FICHIER	CLASSMGR	****************************************/
+/*******************************************************************************************/
 
-/***********************************************************************************************
-*	
-*					Partie call api
-*
-*
-*
-***********************************************************************************************/
+
+
+/*******************************************************************************************/
+/******************		DEBUT	FICHIER	CALL_CLASS	****************************************/
+/*******************************************************************************************/
 
 	$filename = $dir . "/call_" . strtolower($classOri) . ".php";
 
@@ -443,7 +444,7 @@ class $class extends PDO
 	header('Content-Type: application/json');
 	\$authorized = false;
 	require_once('LoadClass.php');
-	if(isset(\$_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower(\$_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' && isset(\$_SERVER['HTTP_ORIGIN']) && (\$_SERVER['HTTP_ORIGIN'] == 'https://api.netprogress.ch'))
+	if(isset(\$_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower(\$_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' && isset(\$_SERVER['HTTP_ORIGIN']) && (\$_SERVER['HTTP_ORIGIN'] == 'YOURDOMAINNAME'))
 		\$authorized = true;
 	if(!\$authorized){
 		if(!isset(\$_POST['token'])){
@@ -560,7 +561,9 @@ class $class extends PDO
 
 
 <p><font size=\"1\" face=\"Arial\">this is a script from CrystalSkunk</font></p>";	
-
+/*******************************************************************************************/
+/******************		FIN		FICHIER	CALL_CLASS	****************************************/
+/*******************************************************************************************/
 
 } 
 ?>
