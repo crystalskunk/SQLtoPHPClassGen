@@ -478,7 +478,7 @@ class $class extends PDO
 	$core_calls = "";
 	$core_calls .= "
 		if(isset(\$_POST['action'])){
-		logCall$classOri(var_export(\$_POST,true));
+		logCall" . "$classOri" . "(var_export(\$_POST,true));
 		switch(\$_POST['action']){
 			case 'insert':
 	";
@@ -530,7 +530,7 @@ class $class extends PDO
 		echo \"no arguments\";
 	}
 	
-	function logCallClient(\$string) {
+	function logCall" . "$classOri" . "(\$string) {
 		\$filename = 'log/call_" . "$nomObjet" . ".log';
 		\$currentDateTime = date('Y-m-d H:i:s');
 		\$line = \"{\$currentDateTime} | {\$string}\\n\";
