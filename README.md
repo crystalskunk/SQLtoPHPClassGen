@@ -8,7 +8,7 @@
 - Give the unique term you will use for index
 - Click generate !
 
-3 files per table is created :
+3 files per table are created :
   - resources/class.YOURCLASS.php   <-- Define all fields and get/set methods
   - resources/class.YOURCLASSmanager.php  <-- Define the mains functions (select, insert, delete, update) 
   - call_YOURCLASS.php     <-- Your entry point for API calls
