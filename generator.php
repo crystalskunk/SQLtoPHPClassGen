@@ -517,7 +517,7 @@ class $class extends PDO
 				
 			break;
 			
-			case 'loadClients':
+			case 'load" . "$classOri" . "':
 				\$res = $" . "$nomObjetMgr" . "->getAll();
 				echo json_encode(\$res);
 				
